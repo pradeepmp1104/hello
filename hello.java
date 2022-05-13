@@ -1,15 +1,19 @@
-class Main {
+import java.util.Scanner;
+public class pattern1 {
+    public static void main(String[] args) {
 
-  public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.println("Enter the no.of stars: ");
+        int n = input.nextInt();
+        for(int i=0;i<n;i++){
+            for(int j=0;j<n;j++){
+                System.out.print("* ");
+                if(i==j) break;
+            }
+            System.out.println(" ");
+        }
+        input.close();
+    }
     
-    System.out.println("Enter two numbers");
-    int first = 10;
-    int second = 20;
     
-    System.out.println(first + " " + second);
-
-    // add two numbers
-    int sum = first + second;
-    System.out.println("The sum is: " + sum);
-  }
 }
